@@ -9,4 +9,14 @@ public class hello {
     public String index() {
         return "Hello World with Quang Quy!";
     }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "Hello World with admin!";
+    }
+
+    @GetMapping("/users")
+    public String userPage() {
+        return "Hello World with user";
+    }
 }
